@@ -12,7 +12,7 @@ const User = require("./models/user-model");
 
 // let's tackle cors
 const corsOptions = {
-    origin: "https://registration-full-stack.vercel.app/",
+    origin: "https://registration-full-stack.vercel.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };
