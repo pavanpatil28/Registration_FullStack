@@ -31,6 +31,10 @@ app.use(errorMiddleware);
 
 const PORT = 5000;
 
+app.get("/", (req,res)=>{
+    res.send("Hello")
+})
+
 connectDb().then(() => {
     app.listen(PORT, () => {    
         console.log(`server is running at port: ${PORT}`);
