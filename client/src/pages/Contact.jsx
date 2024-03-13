@@ -45,7 +45,7 @@ const Contact = () => {
         e.preventDefault(); 
 
         try{
-            const response = await fetch("http://localhost:5000/api/form/contact", {
+            const response = await fetch("https://registration-full-stack-gkg7.vercel.app/api/form/contact", {
                 method: "POST",
                 headers: {
                     'Content-Type' : "application/json"

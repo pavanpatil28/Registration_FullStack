@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {useNavigate} from "react-router-dom"
-const URL = "http://localhost:5000/api/auth/register";
+const URL = "https://registration-full-stack-gkg7.vercel.app/api/auth/register";
 import {useAuth} from "../store/auth";
 import { toast } from "react-toastify";
 

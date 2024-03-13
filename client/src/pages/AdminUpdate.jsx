@@ -18,7 +18,7 @@ export const AdminUpdate = () => {
     const getSingleUserData = async(id) => {
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/${params.id}`, {
+            const response = await fetch(`https://registration-full-stack-gkg7.vercel.app/api/admin/users/${params.id}`, {
                 method: "GET", 
                 headers: {
                     Authorization : authorizationToken,
@@ -58,7 +58,7 @@ export const AdminUpdate = () => {
         e.preventDefault();
 
         try{
-            const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`, {
+            const response = await fetch(`https://registration-full-stack-gkg7.vercel.app/api/admin/users/update/${params.id}`, {
                 method: "PATCH", 
                 headers: {
                     "Content-Type": "application/json",

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
-const URL = "http://localhost:5000/api/auth/login";
+const URL = "https://registration-full-stack-gkg7.vercel.app/api/auth/login";
 
 const Login = () => {
 
