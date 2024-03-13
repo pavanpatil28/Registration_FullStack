@@ -8,6 +8,7 @@ const serviceRoute = require("./router/service-router");
 const adminRoute = require("./router/admin-router");
 const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
+const User = require("./models/user-model");
 
 // let's tackle cors
 const corsOptions = {
@@ -33,6 +34,11 @@ const PORT = 5000;
 
 app.get("/", (req,res)=>{
     res.send("Hello")
+})
+
+app.get("/getAllUsers", async(req,res)=>{
+    let data = await User.find();
+    res.send(data)
 })
 
 connectDb().then(() => {
